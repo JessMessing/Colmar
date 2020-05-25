@@ -47,6 +47,11 @@ table {
 	border-spacing: 0;
 }
 
+img{
+    width: 100%;
+    height: auto;
+}
+
 /* Font-styles */
 
 html{
@@ -58,10 +63,17 @@ html{
 h1{
    font-weight: bold;
    font-size: 3.25rem; 
+   line-height: 4rem;
 }
 
 h2{
     font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+a{
+    color: rgb(0, 110, 255);
+    text-decoration: underline;
 }
 
 /* banner */
@@ -150,11 +162,6 @@ h2{
     margin-right: 1.5rem;
 }
 
-.infoleft img{
-    width: 100%;
-    height: auto;
-}
-
 .infoleft h1{
     margin-top: 2rem;
 }
@@ -164,10 +171,58 @@ h2{
 }
 
 .citation{
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
 }
 
 .inforight{
     display: flex;
     flex-direction: column;
+    width: 40%;
+    height: auto;
+    border: solid 0px rgb(214, 214, 214);
+    border-left-width: 1px;
+}
+
+.infobox{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border: solid 0px rgb(214, 214, 214);
+    border-bottom-width: 1px;
+}
+
+.guest{
+    background-color: rgb(214, 214, 214);
+}
+
+.infobox_image_container{
+    width: 35%;
+    height: auto;
+}
+
+.infoboxtext{
+    width: 35%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.infoboxtext h2,
+.infoboxtext span,
+.infoboxtext a{
+    padding: .5rem;
+}
+
+/* Start Learning Section */
+
+.containerstartlearning{
+    padding: 0 4.5rem 2rem 4.5rem;
+    background-color: rgb(214, 214, 214);
+} 
+
+.containerstartlearning h1{
+    display: block;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
 }
