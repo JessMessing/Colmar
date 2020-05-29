@@ -146,7 +146,7 @@ a{
     text-align: center;
 }
 
-/* Information Section*/
+/* Information and Thesis Section*/
 
 .containerwhite{
     display: flex;
@@ -166,7 +166,7 @@ a{
     margin-top: 2rem;
 }
 
-.infoleft span{
+.infoleft p{
     margin-top: 1.5rem;
 }
 
@@ -233,6 +233,7 @@ a{
     padding-left: 4.5rem;
     padding-right: 4.5rem;
     padding-bottom: 2rem;
+    justify-content: center;
 }
 
 .coursebox img{
@@ -254,3 +255,64 @@ a{
 }
 
 /* Thesis Section */
+
+h1.thesis{
+    background-color: white;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.containerwhite h1{
+    display: block;
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.videoleft{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+}
+
+.videoleft h2{
+    margin-top: 1.5rem;
+}
+
+.videoleft p{
+    margin-top: .5rem;
+}
+
+.videoright{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: auto;
+}
+
+.videoright .infobox{
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border: none;
+}
+
+.fisma{
+    background-color: rgb(214, 214, 214);
+}
+
+/* Footer Section */
+
+.footer{
+    padding: 1rem 1.5rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .85rem;
+    color: rgb(214, 214, 214);
+    border: solid 0px rgb(214, 214, 214);
+    border-top-width: 1px;
+}
