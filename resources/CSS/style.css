@@ -89,6 +89,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .logo{
@@ -108,6 +109,30 @@ a{
 .items{
     padding-left: 1.25rem;
 } 
+
+/* Mobile Banner */
+
+.mobilebanner{
+    display: none;
+}
+
+@media only screen and (max-width: 640px){
+    .banner{
+        display: none;
+    }
+
+    .mobilebanner{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+    }
+
+    .mobilebanner img{
+        height: 75%;
+        width: auto;
+    }
+}
 
 /* start here! section */
 
@@ -144,6 +169,36 @@ a{
     padding-top: .5rem;
     padding-bottom: .5rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 640px){
+    .containergray{
+        display: block;
+        padding: 0 0 2rem 0;
+    }
+
+    .containergray .image{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .containergray .text{
+        display: block;
+        padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    .text h1{
+        padding-bottom: 2rem;
+    }
+
+    .text h2{
+        padding-bottom: 1.5rem;
+    }
+
+    .text .button h2{
+        padding-bottom: 0;
+    }
 }
 
 /* Information and Thesis Section*/
@@ -195,9 +250,27 @@ a{
     background-color: rgb(214, 214, 214);
 }
 
-.infobox_image_container{
+#orientation{
     width: 35%;
     height: auto;
+    background-image: url("../images/information-orientation.jpg");
+    background-size: cover;
+}
+
+#campus{
+    width: 35%;
+    height: 35%;
+    height: auto;
+    background-image: url("../images/information-campus.jpg");
+    background-size: cover;
+}
+
+#guest{
+    width: 35%;
+    height: 35%;
+    height: auto;
+    background-image: url("../images/information-guest-lecture.jpg");
+    background-size: cover;
 }
 
 .infoboxtext{
@@ -211,6 +284,40 @@ a{
 .infoboxtext span,
 .infoboxtext a{
     padding: .5rem;
+}
+
+@media only screen and (max-width: 640px){
+    .infoleft{
+        display: none;
+    }
+
+    .inforight{
+        display: block;
+        width: 100%;
+        padding: 1rem 1rem 2rem 1rem;
+        border: solid 1px rgb(214, 214, 214);
+    }
+
+    .infobox{
+        display: block;
+        padding: 0 0 2rem 0;
+        border-bottom-width: 0px;
+    }
+
+    .guest{
+        background-color: white;
+    }
+
+    .infobox_image_container{
+        width: 100%;
+        height: auto;
+    }
+
+    .infoboxtext{
+        width: 100%;
+        display: block;
+        padding: 0 1rem;
+    }
 }
 
 /* Start Learning Section */
