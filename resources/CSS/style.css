@@ -76,6 +76,10 @@ a{
     text-decoration: underline;
 }
 
+.graytext{
+    color: rgb(214, 214, 214);
+}
+
 /* banner */
 
 .banner{
@@ -95,10 +99,6 @@ a{
 
 .colmar{
     color: rgb(32, 32, 32);
-}
-
-.academy{
-    color: gray;
 }
 
 .colmar, .academy{
@@ -226,3 +226,31 @@ a{
     padding: 2rem 0;
     text-align: center;
 }
+
+.containerstartlearning .containercourses{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    padding-bottom: 2rem;
+}
+
+.coursebox img{
+    height: auto;
+}
+
+.coursebox{
+    margin: 2rem 1rem 2rem 1rem;
+    background-color: white;
+    width: 30%;
+}
+
+.coursebox .textbox{
+    padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.coursebox .textbox p{
+    padding-top: .5rem;
+}
+
+/* Thesis Section */
