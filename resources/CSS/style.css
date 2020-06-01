@@ -73,7 +73,7 @@ h2{
 
 a{
     color: rgb(0, 110, 255);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .graytext{
@@ -109,8 +109,6 @@ a{
 .items{
     padding-left: 1.25rem;
 } 
-
-/* Mobile Banner */
 
 .mobilebanner{
     display: none;
@@ -250,27 +248,9 @@ a{
     background-color: rgb(214, 214, 214);
 }
 
-#orientation{
+.infobox_image_container{
     width: 35%;
     height: auto;
-    background-image: url("../images/information-orientation.jpg");
-    background-size: cover;
-}
-
-#campus{
-    width: 35%;
-    height: 35%;
-    height: auto;
-    background-image: url("../images/information-campus.jpg");
-    background-size: cover;
-}
-
-#guest{
-    width: 35%;
-    height: 35%;
-    height: auto;
-    background-image: url("../images/information-guest-lecture.jpg");
-    background-size: cover;
 }
 
 .infoboxtext{
@@ -281,12 +261,26 @@ a{
 }
 
 .infoboxtext h2,
-.infoboxtext span,
+.infoboxtext p,
 .infoboxtext a{
     padding: .5rem;
 }
 
+#mobile_image{
+    display: none;
+}
+
 @media only screen and (max-width: 640px){
+    .containerwhite{
+        padding: 0;
+    }
+    
+    h2,
+    p,
+    a{
+        padding: 0;
+    }
+    
     .infoleft{
         display: none;
     }
@@ -295,7 +289,7 @@ a{
         display: block;
         width: 100%;
         padding: 1rem 1rem 2rem 1rem;
-        border: solid 1px rgb(214, 214, 214);
+        border: solid 0px rgb(214, 214, 214);
     }
 
     .infobox{
@@ -318,6 +312,14 @@ a{
         display: block;
         padding: 0 1rem;
     }
+
+    #desktop_image{
+        display: none;
+    }
+
+    #mobile_image{
+        display: block;
+    }
 }
 
 /* Start Learning Section */
@@ -334,7 +336,7 @@ a{
     text-align: center;
 }
 
-.containerstartlearning .containercourses{
+.containercourses{
     display: flex;
     flex-wrap: wrap;
     padding-left: 4.5rem;
@@ -343,14 +345,14 @@ a{
     justify-content: center;
 }
 
-.coursebox img{
-    height: auto;
-}
-
 .coursebox{
     margin: 2rem 1rem 2rem 1rem;
     background-color: white;
     width: 30%;
+}
+
+.coursebox img{
+    height: auto;
 }
 
 .coursebox .textbox{
@@ -361,6 +363,51 @@ a{
     padding-top: .5rem;
 }
 
+@media only screen and (max-width: 640px){
+    .containerstartlearning{
+        padding: 1rem 1rem 2rem 1rem;
+        background-color: white;
+        border: solid 1px rgb(214, 214, 214);
+        border-left-width: 0;
+        border-right-width: 0;
+    }
+
+    .containerstartlearning h1{
+        padding: 2rem 0 1rem 0;
+    }
+
+    .containercourses{
+        display: block;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .coursebox{
+        margin: 0;
+        background-color: rgb(214, 214, 214);
+        width: 100%;
+        margin: .5rem 0;
+    }
+
+    .coursebox img{
+        display: none;
+    }
+
+    .coursebox .textbox{
+        padding: 0;
+    }
+
+    .coursebox .textbox p,
+    .coursebox .textbox p{
+        display: none;
+    }
+
+    .coursebox .textbox h2{
+        padding: 1rem 1rem 1.5rem 1rem;
+    }
+}
+
 /* Thesis Section */
 
 h1.thesis{
@@ -369,11 +416,10 @@ h1.thesis{
     text-align: center;
 }
 
-.containerwhite h1{
-    display: block;
-    width: 100%;
-    padding: 2rem 0;
-    text-align: center;
+.container_white_thesis{
+    display: flex;
+    padding: 2rem 1.5rem;
+    background-color: white;
 }
 
 .videoleft{
@@ -410,6 +456,30 @@ h1.thesis{
     background-color: rgb(214, 214, 214);
 }
 
+@media only screen and (max-width: 640px){
+    .container_white_thesis{
+        display: block;
+        padding: 1rem 0 1.5rem 0;
+        background-color: white;
+    }
+
+    .videoleft{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-right: 0;
+    }
+
+    .videoleft h2,
+    .videoleft p{
+        display: none;
+    }
+
+    .videoright{
+        display: none;
+    }
+}
+
 /* Footer Section */
 
 .footer{
@@ -422,4 +492,16 @@ h1.thesis{
     color: rgb(214, 214, 214);
     border: solid 0px rgb(214, 214, 214);
     border-top-width: 1px;
+}
+
+@media only screen and (max-width: 640px){
+    .terms{
+        display: none;
+    }
+
+    .footer{
+        padding: 1rem;
+        display: block;
+        height: auto;
+    }
 }
